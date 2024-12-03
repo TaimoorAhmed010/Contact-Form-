@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #6c678a, #9b9b9b);
+  }
+  
+  /* Container for forms */
+  .container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 25px 35px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Titles */
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus {
+    border-color: #6A5ACD;
+    box-shadow: 0 0 8px rgba(106, 90, 205, 0.4);
+    outline: none;
+  }
+  
+  /* Buttons */
+  button {
+    width: 100%;
+    padding: 12px 15px;
+    background: linear-gradient(to right, #6A5ACD, #00CED1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background: linear-gradient(to left, #6A5ACD, #00CED1);
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Error Messages */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px 25px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 18px;
+    }
+  
+    input {
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 10px 12px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hidden Class for Forms */
+  .hidden {
+    display: none;
+  }
+  
